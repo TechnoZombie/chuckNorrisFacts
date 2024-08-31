@@ -1,0 +1,3 @@
+Create new Vite + React project:
+
+$ npm create vite@latest
