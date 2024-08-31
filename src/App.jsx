@@ -25,7 +25,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
 useEffect(() => {
-  const fetchInitialJoke = async () => {
+  const fetchJoke = async () => {
     setLoading(true); // Set loading to true before fetching data
     try {
       const initialJoke = await fetchData(API_URL_RANDOM);
@@ -35,9 +35,10 @@ useEffect(() => {
       console.error("Error fetching data:", error);
     } finally {
       setLoading(false); // Set loading to false after data is fetched or if an error occurs
+      // TODO: Create error component
     }
   };
-  fetchInitialJoke();
+  fetchJoke();
 }, []);
 
 
