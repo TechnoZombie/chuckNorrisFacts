@@ -1,7 +1,7 @@
 function LoadingScreen(){
     return (    
 <>
-        <p>TEST LOADING SCREEN</p>
+    Loading...<img src='/dancingChuck.gif'/>
         </>
     )
 }

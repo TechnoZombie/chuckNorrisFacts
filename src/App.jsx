@@ -1,60 +1,47 @@
-//REACT
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import { fetchJoke } from "./components/JokeService.jsx";
 
-//COMPONENTS
+// COMPONENTS
 import Header from "./components/Header.jsx";
 import MainBoard from "./components/MainBoard.jsx";
 import Footer from "./components/Footer.jsx";
 
-//CSS
-import './css/App.css'
-
-//IMAGES
-
-const API_URL_RANDOM = "https://api.chucknorris.io/jokes/random";
-
-const fetchData = async(url) => {
-  const response = await fetch(url);
-  const data = await response.json();
-  return data;
-};
+// CSS
+import './css/App.css';
 
 function App() {
   const [joke, setJoke] = useState('');
   const [loading, setLoading] = useState(false);
 
-useEffect(() => {
-  const fetchJoke = async () => {
-    setLoading(true); // Set loading to true before fetching data
+  const loadJoke = async () => {
+    setLoading(true);
+    setJoke(''); // Reset joke to ensure previous joke isn't shown during loading
     try {
-      const initialJoke = await fetchData(API_URL_RANDOM);
-      setJoke(initialJoke.value);
+      const initialJoke = await fetchJoke();
+      setJoke(initialJoke);
     } catch (error) {
-      // Handle the error here, e.g., display an error message
-      console.error("Error fetching data:", error);
+      // TODO: Call an error component if the loading fails
+      console.error("Error fetching joke:", error);
     } finally {
-      setLoading(false); // Set loading to false after data is fetched or if an error occurs
       // TODO: Create error component
+      setLoading(false);
     }
   };
-  fetchJoke();
-}, []);
 
-
+  useEffect(() => {
+    loadJoke();
+  }, []);
 
   return (
     <>
-    <Header />
-
-    <Routes basename="/chuckNorrisFacts">
-    <Route path="/"
-      element={<MainBoard joke={joke} loading={loading} />} />    
-    </Routes>
-    
-    <Footer />
+      <Header />
+      <Routes basename="/chuckNorrisFacts">
+        <Route path="/" element={<MainBoard joke={joke} loading={loading} fetchNewJoke={loadJoke} />} />
+      </Routes>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
