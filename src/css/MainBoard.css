@@ -1,0 +1,22 @@
+
+.factBox {
+    display: flex; /* Use Flexbox to arrange items horizontally */
+    align-items: center; /* Vertically center the items within the .factBox */
+    gap: 10px; /* Space between the image and the paragraph */
+    padding: 10px; /* Optional padding for spacing within the box */
+}
+
+.factBox img {
+    max-width: 50px; /* Adjust as needed to fit the design */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Keeps the image contained within its bounds */
+}
+
+.factBox .joke {
+    margin: 0; /* Reset default paragraph margin */
+    flex: 1; /* Allow the paragraph to take up the remaining space */
+}
+.MainBoard #pixelchuck {
+    max-height: 8vh;
+    transition: transform 0.2s; /* Smooth transition to enhance the effect */
+}

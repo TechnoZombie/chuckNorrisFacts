@@ -1,0 +1,44 @@
+.Header {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    padding: 10px;
+}
+
+.Header-content {
+    display: flex; /* Arrange children (h1 and img) in a row */
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Space between h1 and img */
+}
+
+.Header #legochuck {
+    max-height: 20vh;
+    transition: transform 0.2s; /* Smooth transition to enhance the effect */
+}
+
+.Header #title:hover {
+    animation: shake 0.5s ease-in-out; /* Apply the shake animation */
+}
+
+.Header img:hover {
+
+    filter: drop-shadow(0 0 1.2em rgba(255, 240, 188, 0.67));
+    animation: spin-horizontal 1s ease-in-out; /* Adjust duration as needed */
+}
+
+/* Keyframes for shake effect */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+/* Spin 360º horizontally (Y-axis) */
+.Header img.spin-horizontal {
+    max-height: 20vh;
+    animation: spin-horizontal 1s ease-in-out; /* Adjust duration as needed */
+}
+
+@keyframes spin-horizontal {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}

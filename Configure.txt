@@ -1,3 +1,8 @@
 Create new Vite + React project:
-
 $ npm create vite@latest
+
+Install after cloning the project:
+$ npm install
+
+Run webapp locally:
+$ npm run dev

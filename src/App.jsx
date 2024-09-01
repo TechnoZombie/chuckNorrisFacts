@@ -8,7 +8,7 @@ import MainBoard from "./components/MainBoard.jsx";
 import Footer from "./components/Footer.jsx";
 
 //CSS
-import './App.css'
+import './css/App.css'
 
 //IMAGES
 
