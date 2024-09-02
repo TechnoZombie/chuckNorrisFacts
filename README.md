@@ -1,6 +1,6 @@
-# Chuck Norris Facts
+# Chuck Norris: Facts.
 
-Welcome to the Chuck Norris Facts app! This React application fetches and displays random Chuck Norris facts from the ChuckNorris.io API. The app features a fun and interactive UI with animations and easy navigation.
+Welcome to the Chuck Norris: Facts. app! This React application fetches and displays random Chuck Norris facts from the ChuckNorris.io API. The app features a fun and interactive UI with animations and easy navigation.
 
 ## Features
 
