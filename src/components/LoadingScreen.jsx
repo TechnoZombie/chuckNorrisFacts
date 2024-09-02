@@ -1,7 +1,9 @@
+import '/src/css/LoadingScreen.css';
+
 function LoadingScreen(){
     return (    
 <>
-    Loading...<img src='/dancingChuck.gif'/>
+    <p>Loading...</p><img src='/dancingChuck.gif'/>
         </>
     )
 }

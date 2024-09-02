@@ -3,17 +3,17 @@
     align-items: center; /* Vertically center the items within the .factBox */
     padding: 10px; /* Optional padding for spacing within the box */
     flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    gap: 10px; /* Space between flex items */
+    gap: 5px; /* Space between flex items */
     flex-direction: row; /* Ensures the image stays on the left */
 }
 
 .chuckHeadBox {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
     width: 10vh; /* Use vh for height-related properties to ensure better scaling */
     height: 10vh;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 1vh;
     overflow: hidden; /* Ensures the image fits within the box */
     order: 1; /* Keeps the image to the left */
@@ -21,15 +21,14 @@
 }
 
 .chuckHeadBox img {
-    width: 100%; /* Adjusts to the size of the .chuckHeadBox */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 10vh; /* Prevents image from exceeding the container size */
+    max-width: 100%; /* Adjusts to fit within the box */
+    max-height: 100%; /* Maintains aspect ratio within the constraints */
 }
 
 .jokeBox {
     margin: 0; /* Reset default paragraph margin */
     flex: 1; /* Allow the paragraph to take up the remaining space */
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 1vh;
     padding: 10px; /* Adds some internal spacing */
     min-height: 10vh; /* Ensures it maintains the intended height */
@@ -38,21 +37,12 @@
     order: 2; /* Keeps the jokeBox always to the right */
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .factBox {
-        flex-direction: row; /* Keeps items in row direction even on smaller screens */
-        align-items: flex-start; /* Align items to the top */
-    }
-
-    .chuckHeadBox, .jokeBox {
-        width: auto; /* Adjust width automatically for responsiveness */
-        max-height: none; /* Remove height restriction for better scaling */
-    }
-
-    .jokeBox {
-        flex: 1; /* Takes up remaining space */
-    }
+.joke {
+        font-family: 'Pixelify Sans', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400; /* 400 to 700 */
+        font-style: normal;
+        font-size: 2.5vh;   
 }
 
 .MainBoard #pixelchuck {

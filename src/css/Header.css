@@ -2,12 +2,21 @@
     display: flex;
     justify-content: center; /* Centers the content horizontally */
     padding: 10px;
+
 }
 
 .Header-content {
     display: flex; /* Arrange children (h1 and img) in a row */
     align-items: center; /* Align items vertically in the center */
     gap: 10px; /* Space between h1 and img */
+}
+
+#title {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* 400 to 700 */
+    font-style: normal;
+    font-size: 7vh;
 }
 
 .Header #legochuck {
