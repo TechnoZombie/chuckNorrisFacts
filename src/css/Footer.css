@@ -1,0 +1,36 @@
+.footer {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* 400 to 700 */
+    font-style: normal;
+    font-size: 2.0vh;   
+}
+
+.github-link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.github-link a, /* Targeting the a tags inside .github-link */
+.text {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}
+
+.github-link a:hover, /* Adding hover effect */
+.text:hover {
+    color: teal; /* Change color on hover */
+}
+
+.github-logo {
+    height: 2em;
+    vertical-align: middle;
+}
