@@ -19,11 +19,15 @@ function MainBoard({ joke, loading, fetchNewJoke }) {
             <LoadingScreen />
           ) : (
             <div className='factBox'>
+              <div className='chuckHeadBox'>
               <img
                 src="/pixelchuck.png"
                 alt="Pixel Chuck Norris"
                 id='pixelchuck' />
+                </div>
+                <div className='jokeBox'>
               <p className='joke'>{joke}</p>
+            </div>
             </div>
           )}
           <p>------</p>
