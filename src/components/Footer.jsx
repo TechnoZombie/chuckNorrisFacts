@@ -15,7 +15,7 @@ function Footer() {
                         rel="noopener noreferrer"
                     >
                         <img 
-                            src="chuckNorrisFacts/github-logo.png" 
+                            src="/chuckNorrisFacts/github-logo.png" 
                             alt="GitHub Logo" 
                             className="github-logo" 
                         />
