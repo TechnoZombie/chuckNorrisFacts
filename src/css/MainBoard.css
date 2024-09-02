@@ -1,4 +1,4 @@
-.factBox {
+.outerFactBox {
     display: flex; /* Use Flexbox to arrange items horizontally */
     align-items: center; /* Vertically center the items within the .factBox */
     padding: 10px; /* Optional padding for spacing within the box */
@@ -25,7 +25,7 @@
     max-height: 100%; /* Maintains aspect ratio within the constraints */
 }
 
-.jokeBox {
+.factBox {
     margin: 0; /* Reset default paragraph margin */
     flex: 1; /* Allow the paragraph to take up the remaining space */
     border: 2px solid white;
@@ -34,10 +34,10 @@
     min-height: 10vh; /* Ensures it maintains the intended height */
     overflow: auto; /* Allows content to scroll if it overflows */
     box-sizing: border-box; /* Ensures padding is included in the width/height calculations */
-    order: 2; /* Keeps the jokeBox always to the right */
+    order: 2; /* Keeps the factBox always to the right */
 }
 
-.joke {
+.fact {
         font-family: 'Pixelify Sans', sans-serif;
         font-optical-sizing: auto;
         font-weight: 400; /* 400 to 700 */

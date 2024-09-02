@@ -7,13 +7,13 @@ export const fetchData = async (url) => {
   return data;
 };
 
-// Fetch joke function
-export const fetchJoke = async () => {
+// Fetch fact function
+export const fetchFact = async () => {
   try {
-    const initialJoke = await fetchData(API_URL_RANDOM);
-    return initialJoke.value;
+    const initialFact = await fetchData(API_URL_RANDOM);
+    return initialFact.value;
   } catch (error) {
-    console.error("Error fetching joke:", error);
+    console.error("Error fetching fact:", error);
     throw error; // Re-throw the error if needed
   }
 };
