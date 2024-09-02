@@ -3,7 +3,7 @@ import '/src/css/LoadingScreen.css';
 function LoadingScreen(){
     return (    
 <>
-    <p>Loading...</p><img src='/dancingChuck.gif'/>
+    <p>Loading...</p><img src='chuckNorrisFacts/dancingChuck.gif'/>
         </>
     )
 }

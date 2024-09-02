@@ -14,7 +14,7 @@ function MainBoard({ fact, loading, fetchNewFact }) {
             <div className='outerFactBox'>
               <div className='chuckHeadBox'>
               <img
-                src="./pixelchuck.png"
+                src="chuckNorrisFacts/pixelchuck.png"
                 alt="Pixel Chuck Norris"
                 id='pixelchuck' />
                 </div>

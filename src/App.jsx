@@ -37,7 +37,8 @@ function App() {
     <>
       <Header />
       <Routes basename="/chuckNorrisFacts">
-        <Route path="/" element={<MainBoard fact={fact} loading={loading} fetchNewFact={loadFact} />} />
+        <Route path="/chuckNorrisFacts" element={<MainBoard fact={fact} loading={loading} fetchNewFact={loadFact} />} />
+        <Route path="*" element={<MainBoard fact={fact} loading={loading} fetchNewFact={loadFact} />} />
       </Routes>
       <Footer />
     </>

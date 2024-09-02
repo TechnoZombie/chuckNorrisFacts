@@ -35,7 +35,7 @@ function Header() {
                     Chuck Norris: Facts.
                 </h1>
                 <img
-                    src="./legochuck.png"
+                    src="chuckNorrisFacts/legochuck.png"
                     alt="Lego Chuck Norris"
                     id="legochuck"
                     ref={imgRef}
